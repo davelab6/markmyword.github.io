@@ -1,0 +1,44 @@
+@import "vars";
+@import "normalize";
+
+/**
+ * Mark My Word
+ */
+
+body {
+  font-size: 1rem;
+  line-height: 1.25;
+  font-family: $content;
+  color: $grey;
+  background: darken($white, 5%);
+
+  width: 30rem;
+  margin: 0 auto;
+}
+
+a {
+  color: $blue;
+  text-decoration: none;
+  border-bottom: 1px solid darken($white, 10%);
+  transition: all 250ms linear;
+  &:hover {
+    border-bottom-color: $blue;
+  }
+}
+
+.logo {
+  display: block;
+  border-bottom: none;
+  img {
+    width: 100%;
+  }
+}
+
+.text--center {
+  text-align: center;
+}
+
+.lead {
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
